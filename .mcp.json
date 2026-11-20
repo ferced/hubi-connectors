@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hubi": {
+      "type": "http",
+      "url": "https://mcp.gethubi.xyz/mcp"
+    }
+  }
+}

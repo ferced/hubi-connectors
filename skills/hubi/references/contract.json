@@ -1,0 +1,1372 @@
+{
+  "designContract": {
+    "version": 1,
+    "sources": [
+      "web/device-theme.ts",
+      "layout-validation.ts",
+      "web/device-font-assets.ts",
+      "web/device-draw.ts",
+      "docs/design/calma.md"
+    ],
+    "display": {
+      "width": 480,
+      "height": 480,
+      "unit": "px",
+      "colorFormat": "RGB565"
+    },
+    "metrics": {
+      "margin": 24,
+      "radius": 18,
+      "controlRadius": 18,
+      "space": 8,
+      "touchMin": 44,
+      "label": 14,
+      "small": 18,
+      "body": 24,
+      "title": 32,
+      "mono": 16,
+      "pageDot": 3,
+      "pageDotActive": 5,
+      "transitionMs": 180
+    },
+    "palette": {
+      "rgb888": {
+        "BG": 0,
+        "GRID": 0,
+        "DOT_OFF": 0,
+        "SURFACE": 922385,
+        "SURFACE_HI": 1185814,
+        "BORDER": 2699307,
+        "TEXT": 15594989,
+        "TEXT_2": 10726821,
+        "TEXT_3": 8095358,
+        "ACCENT": 12843628,
+        "GREEN": 2001484,
+        "BLUE": 12843628,
+        "WARM": 12843628,
+        "AMBER": 11037440,
+        "RED": 12727854,
+        "INK": 725007,
+        "WHITE": 16777215,
+        "BLACK": 0
+      },
+      "rendered": {
+        "BG": "#000000",
+        "GRID": "#000000",
+        "DOT_OFF": "#000000",
+        "SURFACE": "#081010",
+        "SURFACE_HI": "#101810",
+        "BORDER": "#293029",
+        "TEXT": "#eff7ef",
+        "TEXT_2": "#a5aea5",
+        "TEXT_3": "#7b867b",
+        "ACCENT": "#c6fb6b",
+        "GREEN": "#188a4a",
+        "BLUE": "#c6fb6b",
+        "WARM": "#c6fb6b",
+        "AMBER": "#ad6900",
+        "RED": "#c63429",
+        "INK": "#081008",
+        "WHITE": "#ffffff",
+        "BLACK": "#000000"
+      },
+      "semantics": {
+        "active": "ACCENT",
+        "attention": "AMBER",
+        "problem": "RED"
+      }
+    },
+    "fonts": [
+      {
+        "name": "display48",
+        "pixels": 48,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            161,
+            161
+          ],
+          [
+            176,
+            176
+          ],
+          [
+            183,
+            183
+          ],
+          [
+            191,
+            191
+          ],
+          [
+            193,
+            193
+          ],
+          [
+            201,
+            201
+          ],
+          [
+            205,
+            205
+          ],
+          [
+            209,
+            209
+          ],
+          [
+            211,
+            211
+          ],
+          [
+            218,
+            218
+          ],
+          [
+            220,
+            220
+          ],
+          [
+            225,
+            225
+          ],
+          [
+            233,
+            233
+          ],
+          [
+            237,
+            237
+          ],
+          [
+            241,
+            241
+          ],
+          [
+            243,
+            243
+          ],
+          [
+            250,
+            250
+          ],
+          [
+            252,
+            252
+          ]
+        ]
+      },
+      {
+        "name": "display64",
+        "pixels": 64,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            161,
+            161
+          ],
+          [
+            176,
+            176
+          ],
+          [
+            183,
+            183
+          ],
+          [
+            191,
+            191
+          ],
+          [
+            193,
+            193
+          ],
+          [
+            201,
+            201
+          ],
+          [
+            205,
+            205
+          ],
+          [
+            209,
+            209
+          ],
+          [
+            211,
+            211
+          ],
+          [
+            218,
+            218
+          ],
+          [
+            220,
+            220
+          ],
+          [
+            225,
+            225
+          ],
+          [
+            233,
+            233
+          ],
+          [
+            237,
+            237
+          ],
+          [
+            241,
+            241
+          ],
+          [
+            243,
+            243
+          ],
+          [
+            250,
+            250
+          ],
+          [
+            252,
+            252
+          ]
+        ]
+      },
+      {
+        "name": "display96",
+        "pixels": 96,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            161,
+            161
+          ],
+          [
+            176,
+            176
+          ],
+          [
+            183,
+            183
+          ],
+          [
+            191,
+            191
+          ],
+          [
+            193,
+            193
+          ],
+          [
+            201,
+            201
+          ],
+          [
+            205,
+            205
+          ],
+          [
+            209,
+            209
+          ],
+          [
+            211,
+            211
+          ],
+          [
+            218,
+            218
+          ],
+          [
+            220,
+            220
+          ],
+          [
+            225,
+            225
+          ],
+          [
+            233,
+            233
+          ],
+          [
+            237,
+            237
+          ],
+          [
+            241,
+            241
+          ],
+          [
+            243,
+            243
+          ],
+          [
+            250,
+            250
+          ],
+          [
+            252,
+            252
+          ]
+        ]
+      },
+      {
+        "name": "title",
+        "pixels": 32,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            160,
+            163
+          ],
+          [
+            165,
+            165
+          ],
+          [
+            167,
+            171
+          ],
+          [
+            174,
+            176
+          ],
+          [
+            180,
+            180
+          ],
+          [
+            182,
+            184
+          ],
+          [
+            186,
+            187
+          ],
+          [
+            191,
+            255
+          ],
+          [
+            8211,
+            8212
+          ],
+          [
+            8216,
+            8217
+          ],
+          [
+            8220,
+            8221
+          ],
+          [
+            8226,
+            8226
+          ],
+          [
+            8230,
+            8230
+          ],
+          [
+            8364,
+            8364
+          ],
+          [
+            8593,
+            8593
+          ],
+          [
+            8595,
+            8595
+          ]
+        ]
+      },
+      {
+        "name": "body",
+        "pixels": 24,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            160,
+            163
+          ],
+          [
+            165,
+            165
+          ],
+          [
+            167,
+            171
+          ],
+          [
+            174,
+            176
+          ],
+          [
+            180,
+            180
+          ],
+          [
+            182,
+            184
+          ],
+          [
+            186,
+            187
+          ],
+          [
+            191,
+            255
+          ],
+          [
+            8211,
+            8212
+          ],
+          [
+            8216,
+            8217
+          ],
+          [
+            8220,
+            8221
+          ],
+          [
+            8226,
+            8226
+          ],
+          [
+            8230,
+            8230
+          ],
+          [
+            8364,
+            8364
+          ],
+          [
+            8593,
+            8593
+          ],
+          [
+            8595,
+            8595
+          ]
+        ]
+      },
+      {
+        "name": "small",
+        "pixels": 18,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            160,
+            163
+          ],
+          [
+            165,
+            165
+          ],
+          [
+            167,
+            171
+          ],
+          [
+            174,
+            176
+          ],
+          [
+            180,
+            180
+          ],
+          [
+            182,
+            184
+          ],
+          [
+            186,
+            187
+          ],
+          [
+            191,
+            255
+          ],
+          [
+            8211,
+            8212
+          ],
+          [
+            8216,
+            8217
+          ],
+          [
+            8220,
+            8221
+          ],
+          [
+            8226,
+            8226
+          ],
+          [
+            8230,
+            8230
+          ],
+          [
+            8364,
+            8364
+          ],
+          [
+            8593,
+            8593
+          ],
+          [
+            8595,
+            8595
+          ]
+        ]
+      },
+      {
+        "name": "mono",
+        "pixels": 16,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            160,
+            255
+          ],
+          [
+            8211,
+            8212
+          ],
+          [
+            8216,
+            8217
+          ],
+          [
+            8220,
+            8221
+          ],
+          [
+            8226,
+            8226
+          ],
+          [
+            8230,
+            8230
+          ],
+          [
+            8364,
+            8364
+          ],
+          [
+            8592,
+            8595
+          ]
+        ]
+      },
+      {
+        "name": "label",
+        "pixels": 14,
+        "codepointRanges": [
+          [
+            32,
+            126
+          ],
+          [
+            160,
+            163
+          ],
+          [
+            165,
+            165
+          ],
+          [
+            167,
+            171
+          ],
+          [
+            174,
+            176
+          ],
+          [
+            180,
+            180
+          ],
+          [
+            182,
+            184
+          ],
+          [
+            186,
+            187
+          ],
+          [
+            191,
+            255
+          ],
+          [
+            8211,
+            8212
+          ],
+          [
+            8216,
+            8217
+          ],
+          [
+            8220,
+            8221
+          ],
+          [
+            8226,
+            8226
+          ],
+          [
+            8230,
+            8230
+          ],
+          [
+            8364,
+            8364
+          ],
+          [
+            8593,
+            8593
+          ],
+          [
+            8595,
+            8595
+          ]
+        ]
+      }
+    ],
+    "typography": {
+      "engine": "VLW",
+      "customFonts": false,
+      "cssFonts": false,
+      "text": "El renderer normaliza a Latin-1; caracteres fuera de ese rango se reemplazan. Consultá los glifos de cada fuente.",
+      "largeValue": {
+        "candidates": [
+          "display96",
+          "display64",
+          "display48",
+          "title"
+        ],
+        "scale": 1,
+        "selection": "Mayor fuente que no supere el tamaño pedido, tenga todos los glifos y entre en ancho; title reducido como último recurso."
+      },
+      "matrix": "El reloj conserva su matriz de puntos."
+    },
+    "layout": {
+      "scope": "hub",
+      "columns": 4,
+      "rows": 6,
+      "pageKinds": [
+        "home",
+        "lights",
+        "news",
+        "grid"
+      ],
+      "maxPages": 8,
+      "maxWidgetsPerPage": 12,
+      "integerCells": true,
+      "overlap": false,
+      "perDevice": false,
+      "widgetRect": {
+        "originX": 28,
+        "originY": 62,
+        "columnPitch": 108,
+        "rowPitch": 64,
+        "gap": 8,
+        "formula": "x=28+x*108; y=62+y*64; width=w*108-8; height=h*64-8"
+      }
+    },
+    "widgets": [
+      {
+        "type": "clock",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "date",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "quote",
+        "minWidth": 1,
+        "minHeight": 1
+      },
+      {
+        "type": "quotes",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "limits",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "text",
+        "minWidth": 1,
+        "minHeight": 1
+      },
+      {
+        "type": "agents",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "media",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "habit",
+        "minWidth": 1,
+        "minHeight": 1
+      },
+      {
+        "type": "next",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "lights",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "news",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "deploys",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "printer",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "printers",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "buttons",
+        "minWidth": 1,
+        "minHeight": 1
+      },
+      {
+        "type": "focus",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "timba",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "calendar",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "system",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "weather",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "pet",
+        "minWidth": 1,
+        "minHeight": 1
+      },
+      {
+        "type": "vacuum",
+        "minWidth": 2,
+        "minHeight": 1
+      },
+      {
+        "type": "litter",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "metric",
+        "minWidth": 1,
+        "minHeight": 1
+      },
+      {
+        "type": "list",
+        "minWidth": 2,
+        "minHeight": 2
+      },
+      {
+        "type": "image",
+        "minWidth": 2,
+        "minHeight": 2
+      }
+    ],
+    "config": {
+      "maxFields": 32,
+      "maxTextCharacters": 120,
+      "maxListItems": 12,
+      "maxListItemCharacters": 60,
+      "omitted": "Al editar, omitir config conserva las opciones previas. Para quitar un campo usá remove_config_field.",
+      "private": "Conservá referencias privadas completas en su campo y origen; nunca interpolarlas ni moverlas."
+    },
+    "density": {
+      "scope": "hub",
+      "absent": "normal",
+      "newInstallation": "calm",
+      "normal": {
+        "requiredCapabilities": [],
+        "rules": "Presentación existente de cada widget; sin restricciones adicionales de Calma."
+      },
+      "calm": {
+        "requiredCapabilities": [
+          "calma-v1"
+        ],
+        "unsupportedDevice": "La simulación no demuestra soporte: verificá las capacidades anunciadas por el dispositivo.",
+        "rules": {
+          "protagonists": 1,
+          "contextPhrases": 1,
+          "maxWidgetButtons": 1,
+          "maxScreenButtons": 2,
+          "listVisibleRows": 1,
+          "overflow": "La frase de contexto se omite si no entra completa; la lista indica +N más.",
+          "placement": "Rótulo arriba, dato al medio, frase abajo, acción al pie.",
+          "critical": [
+            "Sin WiFi",
+            "Sin hub",
+            "micrófono vivo",
+            "Foco",
+            "Mantené: parar"
+          ],
+          "exceptions": "Reloj, botones, luces, mascota, texto e imagen conservan su presentación específica. limits desde cuatro filas muestra el límite protagonista y hasta tres adicionales; vacuum usa controles propios según tamaño. El toque y detalle dependen del widget y firmware."
+        }
+      }
+    }
+  },
+  "limits": {
+    "grid": {
+      "columns": 4,
+      "rows": 6
+    },
+    "pages": 8,
+    "widgetsPerPage": 12,
+    "bodyBytes": 32768,
+    "previews": 32,
+    "connections": 128,
+    "extensionCards": 12,
+    "extensionsPerPreview": 8,
+    "mappingCharacters": 4096,
+    "receiptHistory": 64,
+    "persistedStateBytes": 8388608,
+    "jsonResponseBytes": 4194304,
+    "jsonPollMs": 60000,
+    "jsonTimeoutMs": 12000,
+    "listRows": 4,
+    "jpegBytes": 98304,
+    "jpegMaxWidth": 480,
+    "jpegMaxHeight": 480
+  },
+  "widgets": [
+    {
+      "type": "clock",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "date",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "quote",
+      "minWidth": 1,
+      "minHeight": 1
+    },
+    {
+      "type": "quotes",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "limits",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "text",
+      "minWidth": 1,
+      "minHeight": 1
+    },
+    {
+      "type": "agents",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "media",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "habit",
+      "minWidth": 1,
+      "minHeight": 1
+    },
+    {
+      "type": "next",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "lights",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "news",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "deploys",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "printer",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "printers",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "buttons",
+      "minWidth": 1,
+      "minHeight": 1
+    },
+    {
+      "type": "focus",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "timba",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "calendar",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "system",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "weather",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "pet",
+      "minWidth": 1,
+      "minHeight": 1
+    },
+    {
+      "type": "vacuum",
+      "minWidth": 2,
+      "minHeight": 1
+    },
+    {
+      "type": "litter",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "metric",
+      "minWidth": 1,
+      "minHeight": 1
+    },
+    {
+      "type": "list",
+      "minWidth": 2,
+      "minHeight": 2
+    },
+    {
+      "type": "image",
+      "minWidth": 2,
+      "minHeight": 2
+    }
+  ],
+  "widgetConfig": {
+    "clock": "Usa la hora local del hub; no requiere config.",
+    "weather": "Usa el clima global: elegí la ciudad en el panel. config.city no configura el clima. Sin ciudad muestra un aviso, no datos inventados.",
+    "next": "Usa el próximo recordatorio del hub. Crealo con hubi_remind {title,in_minutes} o {title,at}; agregar el widget no guarda un recordatorio y config no define su título ni vencimiento.",
+    "text": {
+      "text": "Texto de hasta 120 caracteres"
+    },
+    "metric": {
+      "card": "ID existente de authoring_read.cards, o binding {extension,card} de la propuesta"
+    },
+    "list": {
+      "card": "Mismo contrato que metric; el tipo de la tarjeta debe ser list"
+    },
+    "image": {
+      "card": "Mismo contrato; JPEG del mismo origen que la fuente JSON"
+    },
+    "focus": "Usa el temporizador global existente; no acepta duración por widget."
+  },
+  "approval": {
+    "default": "ask",
+    "covers": [
+      "Cambios de pantallas: layout y piezas colocadas."
+    ],
+    "notCovered": [
+      "Estado y avisos (hubi/nerdbox status, notify): aparecen al instante en la cajita; no cambian tus pantallas ni piden aprobación. Remind guarda ahora el recordatorio y avisa al vencer, sin cambiar pantallas ni pedir aprobación.",
+      "Guardar o borrar piezas de biblioteca no modifica las pantallas."
+    ],
+    "policyPath": "/api/authoring/policy",
+    "panelApplyPath": "/api/authoring/previews/:id/apply"
+  },
+  "configPrivacy": {
+    "representation": "~hubi2.<origen>.<huella>.<firma>~",
+    "unit": "campo completo, incluidas listas",
+    "validity": "origen, widget, campo y valor actual; persiste entre reinicios",
+    "edits": "Reenviar como valor entero del mismo campo; interpolación y uso cruzado se rechazan. Copias sólo con copyFrom o duplicate_widget.",
+    "expired": "expired_reference: referencia vencida, volvé a leer",
+    "exports": "Campos privados omitidos completos; omitted enumera rutas.",
+    "textFilter": "Mejor esfuerzo para logs/diagnóstico/eventos; no detecta todo secreto posible. Credenciales sólo en Conexiones."
+  },
+  "simulation": "Render es una simulación SVG del renderer real, no una captura ni una verificación de hardware. designContract describe el contrato visual; proyecto y render incluyen designContractVersion y layoutContext con la densidad efectiva del único layout global.",
+  "tools": [
+    {
+      "name": "hubi_authoring_capabilities",
+      "title": "Capacidades de autoría",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_authoring_read",
+      "title": "Leer pantallas y propuestas",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_experience_preview",
+      "title": "Proponer una pantalla",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_experience_apply",
+      "title": "Pedir aplicar una propuesta",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_experience_discard",
+      "title": "Descartar una propuesta",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_experience_patch",
+      "title": "Proponer cambios a una pantalla",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_experience_render",
+      "title": "Simular una pantalla",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_experience_export",
+      "title": "Exportar una pantalla",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_experience_import_preview",
+      "title": "Importar una pantalla como propuesta",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_health",
+      "title": "Diagnóstico de HUBI",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_connections_catalog",
+      "title": "Catálogo de conexiones",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_connection_test",
+      "title": "Probar una conexión",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_devices",
+      "title": "Aspiradoras e impresoras",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_show",
+      "title": "Mostrar una pantalla en la cajita",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "scope": "hubi.control"
+    },
+    {
+      "name": "hubi_vacuum",
+      "title": "Controlar una aspiradora",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": true
+      },
+      "scope": "hubi.control"
+    },
+    {
+      "name": "hubi_widgets_list",
+      "title": "Listar piezas",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_widget_read",
+      "title": "Leer una pieza",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_widget_render",
+      "title": "Simular una pieza",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_widget_save",
+      "title": "Guardar una pieza",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_widget_delete",
+      "title": "Borrar una pieza",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_widget_place",
+      "title": "Proponer una pieza en una pantalla",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "scope": "hubi.authoring"
+    },
+    {
+      "name": "hubi_lights_list",
+      "title": "Listar luces",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.read"
+    },
+    {
+      "name": "hubi_light_set",
+      "title": "Controlar una luz",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      },
+      "scope": "hubi.control"
+    },
+    {
+      "name": "hubi_status",
+      "title": "Publicar el estado de la sesión",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "scope": "hubi.signals"
+    },
+    {
+      "name": "hubi_notify",
+      "title": "Enviar un aviso",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "scope": "hubi.signals"
+    },
+    {
+      "name": "hubi_remind",
+      "title": "Crear un recordatorio",
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
+      },
+      "scope": "hubi.signals"
+    }
+  ]
+}

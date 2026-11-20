@@ -1,0 +1,15 @@
+{
+  "name": "hubi",
+  "version": "0.1.0",
+  "description": "Diseñá pantallas HUBI con contexto real, simulación y aprobación local.",
+  "author": {
+    "name": "HUBI",
+    "email": "support@gethubi.xyz",
+    "url": "https://mcp.gethubi.xyz/docs"
+  },
+  "homepage": "https://mcp.gethubi.xyz/docs",
+  "repository": "https://github.com/ferced/hubi-connectors",
+  "license": "MIT",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://mcp.gethubi.xyz/privacy"
+}
